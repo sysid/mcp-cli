@@ -15,6 +15,10 @@
           "@modelcontextprotocol/server-filesystem",
           "/Users/christopherhay/chris-source/chuk-test-code/fibonacci"
         ]
+      },
+      "generic": {
+        "command": "uv",
+        "args": ["--directory", "/Users/christopherhay/chris-source/agent-x/mcp-host", "run", "runtime/src/mcp_server/main.py"]
       }
     }
   }
