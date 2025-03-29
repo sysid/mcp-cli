@@ -1,16 +1,20 @@
-{
-  "mcpServers": {
-    "sqlite": {
-      "command": "uvx",
-      "args": ["mcp-server-sqlite", "--db-path", "test.db"]
-    },
-    "filesystem": {
-      "command": "npx",
-      "args": [
-        "-y",
-        "@modelcontextprotocol/server-filesystem",
-        "/Users/christopherhay/chris-source/chuk-test-code/fibonacci"
-      ]
+  {
+    "mcpServers": {
+      "sqlite": {
+        "command": "uvx",
+        "args": ["mcp-server-sqlite", "--db-path", "test.db"]
+      },
+      "code-sandbox": {
+        "command": "uv",
+        "args": ["--directory", "/Users/christopherhay/chris-source/mcp-servers/mcp-code-sandbox/", "run", "src/main.py"]
+      },
+      "filesystem": {
+        "command": "npx",
+        "args": [
+          "-y",
+          "@modelcontextprotocol/server-filesystem",
+          "/Users/christopherhay/chris-source/chuk-test-code/fibonacci"
+        ]
+      }
     }
   }
-}
