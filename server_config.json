@@ -26,15 +26,19 @@
       },
       "time2": {
         "command": "uv",
-        "args": ["--directory", "/Users/christopherhay/chris-source/agent-x/mcp-servers/chuk-mcp-time-server", "run", "src/chuk_mcp_time_server/main.py"]
+        "args": ["--directory", "/Users/christopherhay/chris-source/chuk-mcp-servers/chuk-mcp-time-server", "run", "src/chuk_mcp_time_server/main.py"]
       },
       "echo": {
+        "command": "uvx",
+        "args": [ "run", "chuk-mcp-echo-server"]
+      },
+      "echo2": {
         "command": "uv",
-        "args": ["--directory", "/Users/christopherhay/chris-source/agent-x/mcp-servers/chuk-mcp-echo-server", "run", "src/chuk_mcp_echo_server/main.py"]
+        "args": ["--directory", "/Users/christopherhay/chris-source/chuk-mcp-servers/chuk-mcp-echo-server", "run", "src/chuk_mcp_echo_server/main.py"]
       },
       "telnet": {
         "command": "uv",
-        "args": ["--directory", "/Users/christopherhay/chris-source/agent-x/mcp-servers/chuk-mcp-telnet-client", "run", "src/chuk_mcp_telnet_client/main.py"]
+        "args": ["--directory", "/Users/christopherhay/chris-source/chuk-mcp-servers/chuk-mcp-telnet-client", "run", "src/chuk_mcp_telnet_client/main.py"]
       },
       "simple": {
         "command": "uv",
